@@ -6,17 +6,17 @@ public class VerificadorCpf {
 	
 
 	public static void main(String[] args) {
-		//declarar as variaveis que vao receber os nº do cpf
+		//declarar as variaveis que vao receber os numero do cpf
 		int n1,dv1,dv2,soma1,mult;
 		String entrada,ncpf,ndv1,ndv2, temp, temp2;
 		char temp3;
 		
 		
-		entrada = JOptionPane.showInputDialog("Digite o numero do cpf, somente os números");
+		entrada = JOptionPane.showInputDialog("Digite o numero do cpf, somente os nï¿½meros");
 		ncpf = entrada;
 		//ncpf = recebe o numero do cpf sem os pontos
 		
-		//Inicialização das variaveis
+		//Inicializaï¿½ï¿½o das variaveis
 		n1=0;
 		soma1=0;
 		mult = 1;
@@ -34,12 +34,12 @@ public class VerificadorCpf {
 				dv1 = soma1%11;//retirando o mod 11
 				ndv1 = ""+dv1; //covertento em string
 								
-				//verificar se o primeiro dv é verdadeiro
+				//verificar se o primeiro dv ï¿½ verdadeiro
 				temp2 = ncpf.substring(9,10);
 				
 				if(temp2.equals(ndv1))
 				{
-					//JOptionPane.showMessageDialog(null, "O primeiro dv é verdadeiro");
+					//JOptionPane.showMessageDialog(null, "O primeiro dv ï¿½ verdadeiro");
 					//calcular a segunda etapa
 					
 					soma1=0;
@@ -62,22 +62,22 @@ public class VerificadorCpf {
 					String temp4;
 					
 					temp4 = temp2;
-					JOptionPane.showMessageDialog(null, "o dv2 é: "+temp4);
+					JOptionPane.showMessageDialog(null, "o dv2 ï¿½: "+temp4);
 					
 					
 					if(temp2.equals(ndv2))
 					{
-						JOptionPane.showMessageDialog(null, "O CPF é correto");
+						JOptionPane.showMessageDialog(null, "O CPF ï¿½ correto");
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(null, "O cpf é incorreto");
+						JOptionPane.showMessageDialog(null, "O cpf ï¿½ incorreto");
 					}
 					
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(null, "O cpf é incorreto");
+					JOptionPane.showMessageDialog(null, "O cpf ï¿½ incorreto");
 				}
 		
 	}
